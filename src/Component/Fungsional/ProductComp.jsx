@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Card} from 'reactstrap'
-import RowProduct from './RowProduct'
+import ProdukBuku from './ProdukBuku'
 
 
 function ProductComp() {
@@ -8,11 +8,11 @@ function ProductComp() {
         <div>
             <Container>
                 <hr/>
-                <Card body inverse color="warning">
+                <Card body inverse color="primary">
                 <h1>Produk</h1>
                 </Card>
                 <Row>
-                    <RowProduct/>
+                    <ProdukBuku/>
                 </Row>
             </Container>
         </div>

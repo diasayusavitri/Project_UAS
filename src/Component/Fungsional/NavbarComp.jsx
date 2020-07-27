@@ -48,6 +48,9 @@ const NavbarComp = (props) => {
                         <NavItem>
                             <NavLink to="/produk" className="nav-link">Produk</NavLink>
                         </NavItem>
+                        <NavItem>
+                            <NavLink to="/formlogin" className="nav-link">Login</NavLink>
+                        </NavItem>
                     </Nav>
 
                 </Collapse>

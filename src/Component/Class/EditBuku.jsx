@@ -55,7 +55,7 @@ class EditBuku extends PureComponent {
         return (
             <Container>
             <h4>Form Tambah Data</h4>
-            <Alert color="success" style={{display: this.state.display}}>
+            <Alert color="info" style={{display: this.state.display}}>
                 {this.state.response}
             </Alert>
             <Form className="form">

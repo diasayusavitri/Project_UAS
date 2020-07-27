@@ -21,6 +21,7 @@ function Beranda() {
                     <Col><CardComp2 id="2" judul="Buku Rekomendasi" /></Col>
 
                 </Row>
+        
             </Container>
         </div>
     )

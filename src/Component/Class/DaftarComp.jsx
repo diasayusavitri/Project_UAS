@@ -58,10 +58,10 @@ class DaftarComp extends PureComponent {
         return (
             <Container>
                 <h2>Data Buku</h2>
-                <Alert color="success" style={{display: this.state.display}}>
+                <Alert color="info" style={{display: this.state.display}}>
                     {this.state.response}
                 </Alert>
-                <NavLink href="/buku/tambah"><Button color="success">Tambah Buku</Button></NavLink>
+                <NavLink href="/buku/tambah"><Button color="info">Tambah Buku</Button></NavLink>
                 <hr />
                 <Table className="table=bordered">
                     <thead>
@@ -98,7 +98,7 @@ class DaftarComp extends PureComponent {
                                         <Button> Edit</Button>
                                     </Link>
                                     <span> </span>
-                                    <Button onClick={()=>this.hapus(buku.id_buku)} color="danger">Hapus</Button>
+                                    <Button onClick={()=>this.hapus(buku.id_buku)} color="success">Hapus</Button>
                                 </td>
                             </tr>
                         )}

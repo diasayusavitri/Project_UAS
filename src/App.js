@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Header from './Component/Fungsional/Header'
 //import Parent from './Component/Class/Parent';
@@ -15,7 +15,7 @@ import EditBuku from './Component/Class/EditBuku';
 // import HooksUseEffects from './Component/Hooks/Functional/HooksUseEffects';
 import { CartContext } from './CartContext';
 import ProductComp from './Component/Fungsional/ProductComp';
-
+import FormLogin from './Component/Fungsional/FormLogin';
 //import logo from './logo.svg';
 // import Home from './Component/Fungsional/Home';
 // import Beranda from './Component/Class/Beranda';
@@ -27,26 +27,26 @@ const App = () => {
 
   return (
     <div>
-            <Header />
-            
-    <BrowserRouter>
-      <CartContext.Provider value={{value, setValue}}>
-        <NavbarComp />
-        <switch>
-          <Route exact path="/" component={Beranda} />
-          <Route exact path="/info" component={Info} />
-          <Route exact path="/buku" component={DaftarComp} />
-          <Route exact path="/buku/tambah" component={TambahBuku} />
-          <Route exact path="/buku/edit" component={EditBuku} />
-          {/* <Route exact path="/kelas" component={KelasComp} /> */}
-          {/* <Route exact path="/hooks" component={HooksComp} />
+      <Header />
+
+      <BrowserRouter>
+        <CartContext.Provider value={{ value, setValue }}>
+          <NavbarComp />
+          <switch>
+            <Route exact path="/" component={Beranda} />
+            <Route exact path="/info" component={Info} />
+            <Route exact path="/buku" component={DaftarComp} />
+            <Route exact path="/buku/tambah" component={TambahBuku} />
+            <Route exact path="/buku/edit" component={EditBuku} />
+            {/* <Route exact path="/kelas" component={KelasComp} /> */}
+            {/* <Route exact path="/hooks" component={HooksComp} />
           <Route exact path="/useeffects" component={HooksUseEffects} /> */}
-          <Route exact path="/produk" component={ProductComp} />
-          
-          {/* {/<Route exact path="/detail/:id" component={DetailComp} />/} */}
-        </switch>
-      </CartContext.Provider>
-    </BrowserRouter>
+            <Route exact path="/produk" component={ProductComp} />
+            <Route exact path="/formlogin" component={FormLogin} />
+            {/* {/<Route exact path="/detail/:id" component={DetailComp} />/} */}
+          </switch>
+        </CartContext.Provider>
+      </BrowserRouter>
     </div>
   );
 }

@@ -19,7 +19,7 @@ function RowProduct2() {
                     <CardImg top width="100%" src="https://ssvr.bukukita.com/babacms/displaybuku/95174.jpg" alt="Card image cap" />
                     <CardBody>
                         <h5><CardTitle>1984 - Republish</CardTitle></h5>
-                        <h3><CardSubtitle>Rp. 71.200</CardSubtitle></h3>
+                        <h3><CardSubtitle>Rp. 71.500</CardSubtitle></h3>
                         <CardText>oleh George Orwell</CardText>
                     </CardBody>
                 </Card>
